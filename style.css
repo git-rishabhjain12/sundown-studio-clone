@@ -135,16 +135,12 @@ header {
   position: absolute;
   width: 500px;
   height: 500px;
-  top: -100px;
+  top: -150px;
   border-radius: 50%;
   filter: blur(20px);
   background: linear-gradient(var(--orange), var(--sundown-orange));
   mix-blend-mode: normal;
-  animation-name: anime1;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation: anime1 5s linear alternate infinite;
 }
 
 @keyframes anime1 {
@@ -168,11 +164,7 @@ header {
   filter: blur(20px);
   mix-blend-mode: normal;
   background: linear-gradient(var(--orange), var(--sundown-orange));
-  animation-name: anime2;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation: anime2 5s linear alternate infinite;
 }
 
 
@@ -198,11 +190,7 @@ header {
   filter: blur(20px);
   mix-blend-mode: normal;
   background: linear-gradient(var(--orange), var(--sundown-orange));
-  animation-name: anime3;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation: anime3 5s linear alternate infinite;
 }
 
 @keyframes anime3 {
@@ -216,7 +204,9 @@ header {
 }
 
 /* Banner CSS End */
-#page-2 {
+
+/* PAGE 2 CSS START */
+#moving-content {
   background-color: #efeae3;
   height: 40vh;
   padding-top: 10vh;
@@ -224,6 +214,10 @@ header {
   position: relative;
   padding-left: 2rem;
   padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
 }
 
@@ -266,3 +260,120 @@ header {
     transform: translate(-100%);
   }
 }
+
+.page2 {
+  background-color: #efeae3;
+  height: 100%;
+  padding: 7rem 2rem;
+}
+
+.page2-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 100vh;
+}
+
+.left-side {
+  position: absolute;
+  top: 0;
+  padding-top: 5vh;
+  z-index: 2;
+}
+
+.left-side h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: start;
+  width: 60vw;
+  padding-left: 3rem;
+  letter-spacing: -5px;
+  line-height: 0.9;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 10px;
+  bottom: -100px;
+  width: 25vw;
+}
+
+.right-side img {
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.right-side p {
+  margin-top: 2rem;
+  width: 80%;
+  bottom: 0;
+  margin: 0 auto;
+  margin-top: 2rem;
+  letter-spacing: 0px;
+  line-height: 1;
+  position: relative;
+  font-size: 18px;
+  text-align: start;
+  z-index: 5;
+}
+
+.background-animation-page2 {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.animation1-page2 {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  top: -30px;
+  left: -50px;
+  border-radius: 50%;
+  filter: blur(40px);
+  background: linear-gradient(var(--orange), var(--sundown-orange));
+  mix-blend-mode: normal;
+  animation: anime1-page2 5s linear alternate infinite;
+}
+
+@keyframes anime1-page2 {
+  from {
+    transform: translate(40%, 0%);
+  }
+
+  to {
+    transform: translate(60%, -20%)
+  }
+}
+
+.animation1-page2 {
+  content: '';
+  position: absolute;
+  width: 700px;
+  height: 600px;
+  top: -30px;
+  left: -50px;
+  border-radius: 50%;
+  filter: blur(40px);
+  background: linear-gradient(var(--orange), var(--sundown-orange));
+  mix-blend-mode: normal;
+  animation: anime1-page2 5s linear alternate infinite;
+}
+
+@keyframes anime2-page2 {
+  from {
+    transform: translate(0%, 0%);
+  }
+
+  to {
+    transform: translate(20%, 5%)
+  }
+}
+
+/* PAGE 2 CSS End */
