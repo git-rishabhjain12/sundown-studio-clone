@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Roboto Mono", monospace; */
-
 }
 
 body {
-  overflow-x: hidden;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  /* font-family: 'Montserrat', sans-serif; */
 }
+
+
+/* #main {
+  position: relative;
+  z-index: 10;
+} */
 
 :root {
   --off-white: #efeae3;
@@ -64,6 +70,23 @@ body {
 .display-text-container p.visible {
   opacity: 1;
 }
+
+
+
+.fixed-image {
+  width: 23vw;
+  height: 65vh;
+  background-color: transparent;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 999;
+  left: 55%;
+  top: 25%;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
+
 
 
 /* Header(NAVBAR) CSS */
@@ -173,7 +196,6 @@ header {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  overflow-x: hidden;
 }
 
 .animation1 {
@@ -181,7 +203,7 @@ header {
   position: absolute;
   width: 500px;
   height: 500px;
-  top: -150px;
+  top: -100px;
   border-radius: 50%;
   filter: blur(20px);
   background: linear-gradient(var(--orange), var(--sundown-orange));
@@ -308,7 +330,7 @@ header {
   }
 }
 
-.page2 {
+#page2 {
   background-color: #efeae3;
   height: 100%;
   padding: 7rem 2rem;
@@ -425,3 +447,134 @@ header {
 }
 
 /* PAGE 2 CSS End */
+
+
+/* PAGE 3 CSS Starts */
+
+#page3 {
+  height: 100%;
+  width: 100%;
+  background-color: #efeae3;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.display-container {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  background-color: black;
+  right: 20%;
+  z-index: 999;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.element {
+  position: relative;
+  /* background-color: #fe330a; */
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.589);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.element h2 {
+  font-size: 3rem;
+  z-index: 999;
+
+}
+
+.overlay {
+  background-color: #ff9831;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -100%;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  transition: all .3s;
+}
+
+.element:hover .overlay {
+  top: 0%;
+}
+
+.element .left-content {
+  padding-right: 2rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: right;
+}
+
+.element .left-content h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+.element .left-content p {
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.allProductBtn {
+  content: '';
+  position: absolute;
+  left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.allProductBtn button {
+  margin-top: 2rem;
+  padding: 30px 50px;
+}
+
+
+/* PAGE 3 CSS Ends */
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-left,
+footer .footer-right {
+  width: 45%;
+}
+
+footer .footer-left h2,
+footer .footer-right h2 {
+  font-size: 1.5rem;
+}
+
+footer .footer-left p {
+  font-size: 1rem;
+}
+
+footer .footer-right .social-icon {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}

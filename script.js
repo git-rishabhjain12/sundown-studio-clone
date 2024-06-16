@@ -29,4 +29,32 @@ window.addEventListener("load", () => {
   };
 
   setTimeout(showNextText, 1000);
+
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector(".main"),
+    smooth: true,
+  });
+
+  elementImage();
 });
+
+function elementImage() {
+  const elementC = document.querySelector(".element-container");
+  const fixedImage = document.querySelector(".fixed-image");
+  let elements = document.querySelectorAll(".element");
+
+  elementC.addEventListener("mouseenter", function () {
+    fixedImage.style.display = "block";
+  });
+
+  elementC.addEventListener("mouseleave", function () {
+    fixedImage.style.display = "none";
+  });
+
+  elements.forEach(function (elem) {
+    elem.addEventListener("mouseenter", function () {
+      let image = elem.getAttribute("data-image");
+      fixedImage.style.backgroundImage = `url(${image})`;
+    });
+  });
+}

@@ -4,15 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+
   <title>Sundown Studio</title>
 </head>
 
 <body>
+
   <div class="loader" id="loader">
     <div class="display-text-container" id="displayTextContainer">
     </div>
   </div>
+
+  <div class="fixed-image"></div>
+
   <div class="main">
     <header>
       <div class="navbar">
@@ -83,8 +93,7 @@
 
     </section>
 
-
-    <section class="page2">
+    <section id="page2">
       <div class="page2-content">
         <div class="left-side">
           <h1>We are a group of design-driven, goal-focused creators, producers, and designers who believe that the
@@ -103,7 +112,112 @@
         </div>
       </div>
     </section>
+
+    <section id="page3">
+      <div class="element-container">
+        <div class="element" id="elem1"
+          data-image="https://images.unsplash.com/photo-1718461607802-af3b03d0ac70?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          <div class="overlay"></div>
+          <h2>Capezio NYC Flagship</h2>
+          <div class="left-content">
+            <h4>CAPEZIO</h4>
+            <p>Environment</p>
+          </div>
+        </div>
+
+        <div class="element"
+          data-image="https://images.unsplash.com/photo-1718002127392-92a7eef514ad?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          <div class="overlay"></div>
+          <h2>50th Anniversary</h2>
+          <div class="left-content">
+            <h4>Nike</h4>
+            <p>experiential</p>
+          </div>
+        </div>
+
+        <div class="element"
+          data-image="https://images.unsplash.com/photo-1588614688492-65b7e720b334?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8cVBZc0R6dkpPWWN8fGVufDB8fHx8fA%3D%3D">
+          <div class="overlay"></div>
+          <h2>Play New Kidvision</h2>
+          <div class="left-content">
+            <h4>Nike</h4>
+            <p>experiential</p>
+          </div>
+        </div>
+
+        <div class="element"
+          data-image="https://images.unsplash.com/photo-1718248028256-aab1460114e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8cVBZc0R6dkpPWWN8fGVufDB8fHx8fA%3D%3D">
+          <div class="overlay"></div>
+          <h2>Carmelo Anthony 7pm In Brooklyn Set</h2>
+          <div class="left-content">
+            <h4>Wave sports entertainment</h4>
+            <p>experiential</p>
+          </div>
+        </div>
+
+        <div class="element"
+          data-image="https://images.unsplash.com/photo-1586233828537-180d5eee0e86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D">
+          <div class="overlay"></div>
+          <h2>Makers Studio HOI</h2>
+          <div class="left-content">
+            <h4>Nike</h4>
+            <p>experiential</p>
+          </div>
+        </div>
+
+        <div class="element"
+          data-image="https://images.unsplash.com/photo-1717900101610-41ecdb0264fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D">
+          <div class="overlay"></div>
+          <h2>NYFW Popup</h2>
+          <div class="left-content">
+            <h4>afterpay</h4>
+            <p>experiential</p>
+          </div>
+        </div>
+
+        <div class="element"
+          data-image="https://images.unsplash.com/photo-1488410457614-948facaea89f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUwfHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D">
+          <div class="overlay"></div>
+          <h2>Converse SoHo</h2>
+          <div class="left-content">
+            <h4>Converse</h4>
+            <p>Environment</p>
+          </div>
+        </div>
+
+        <div class="element"
+          data-image="https://images.unsplash.com/photo-1712025853693-d16e904d0662?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDYwfHFQWXNEenZKT1ljfHxlbnwwfHx8fHw%3D">
+          <div class="overlay"></div>
+          <h2>Kelce Super Bowl Party</h2>
+          <div class="left-content">
+            <h4>Wave sports entertainment</h4>
+            <p>experiential</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="allProductBtn">
+        <button>All Projects <i class="fa-solid fa-arrow-right-long"></i></button>
+      </div> -->
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <h2>Let's collaborate</h2>
+          <p>Email us at <a href="mailto:info@sundownstudio.com">info@sundownstudio.com</a></p>
+        </div>
+        <div class="footer-right">
+          <h2>Follow us</h2>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 
